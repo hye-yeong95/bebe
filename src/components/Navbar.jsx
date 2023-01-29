@@ -1,30 +1,40 @@
 import React from 'react';
-import MenuButton from './MenuButton';
-import logo from '../images/logo.png';
-import textLogo from '../images/text_logo.png';
+import MenuButton from './ui/MenuButton';
+import LoginButton from './ui/LoginButton';
+import mainLogo from '../images/main-logo.png';
 import moreIcon from '../images/more.png';
-import global from '../images/global.png';
+import languageIcon from '../images/language.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <div className='flex w-[1920px] h-[180px] bg-slate-300 justify-around '>
-            <div className='flex'>
-                <img alt='logo' src={logo} />
-                <img alt='text-logo' src={textLogo} />
-            </div>
-            <div className='flex py-20 items-center' >
-                <MenuButton text={"Home"} />
-                <MenuButton text={"Home"} />
-                <MenuButton text={"Home"} />
-                <img alt='icon' src={moreIcon}/>
-            </div>
-            <div className='flex py-20 justify-around items-center'>
-                <button className='flex justify-end items-center relative gap-2.5 px-10 py-[30px] rounded-[100px] bg-black text-white ' >
-                    <p className='font-bold'>Login</p>
+        <header className='flex justify-between bg-white '>
+            <Link to='/' className='flex mx-10 my-5' >
+                <img src={mainLogo} alt="logo" />
+            </Link>
+            <nav className='flex items-center gap-5'>
+                <Link to='/' className='m-5 pl-5'>
+                    <MenuButton text={"Home"} />
+                </Link>
+                <Link to='/detail' className='m-5'>
+                    <MenuButton text={"Bebe Family"} />
+                </Link>
+                <Link to='/crew'  className='m-5'>
+                    <MenuButton text={"Crew"} />
+                </Link>
+                <button className='m-5 pr-5'>
+                    <img src={moreIcon} alt='icon' />
                 </button>
-                <img alt='icon' src={global}/>
+            </nav>
+            <div className='flex items-center mx-10 my-5'>
+                <Link to='/login' >
+                    <LoginButton text={'login'}/>
+                </Link>
+                <button className='px-20'>
+                    <img src={languageIcon} alt='icon' />
+                </button>
             </div>
-        </div>
+        </header>
     );
 }
 
