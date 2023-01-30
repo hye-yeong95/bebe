@@ -21,13 +21,12 @@ export default function Navbar() {
                 <Link to='/crew'  >
                     <MenuButton text={"Crew"} />
                 </Link>
-                
             </nav>
-            <div className='flex justify-end pr-10 items-center gap-5 w-1/4 p-2' >
-                <button className='p-2 text-4xl' >
+            <div className='flex justify-center items-center gap-10 w-1/4 p-6' >
+                <button className='text-4xl' >
                     <CiCircleMore />
                 </button>
-                <button className='p-2 text-3xl' >
+                <button className='text-3xl' >
                     <BsGlobe />
                 </button>
             </div>

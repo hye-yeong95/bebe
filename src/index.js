@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import NotFound from './pages/NotFound';
 import BebeDetail from './pages/BebeDetail';
 import Crew from './pages/Crew';
+import Kit from './pages/Kit';
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
     { index: true, path: '/', element: <Home /> },
     { path: '/detail', element: <BebeDetail /> },
     { path: '/crew', element: <Crew /> },
+    { path: '/bebekit', element: <Kit/>},
     ],
  }
 ]);
