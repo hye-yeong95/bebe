@@ -7,7 +7,7 @@ import TagInfo from '../components/TagInfo';
  
 export default function Home() {
 
-    const [tagValue, setTagValue] = useState(null);
+    const [tagValue, setTagValue] = useState(1);
 
     return (
         <div>
@@ -29,9 +29,9 @@ export default function Home() {
             <div className='h-[700px]'>
                 <h1 className='text-center text-[60px] font-bold mt-20 mb-20'>Sevice</h1>
                 <div className='flex justify-center gap-10' >
-                    <TagButton text={"Bebe diary"} onClick={() => setTagValue(1)} />
-                    <TagButton text={"Bebe kit"} onClick={() => setTagValue(2)}/>
-                    <TagButton text={"Bebe mall"} onClick={() => setTagValue(3)}/>
+                    <TagButton bgColor={ tagValue === 1 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe diary"} onClick={() => setTagValue(1)} />
+                    <TagButton bgColor={ tagValue === 2 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe kit"} onClick={() => setTagValue(2)}/>
+                    <TagButton bgColor={ tagValue === 3 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe mall"} onClick={() => setTagValue(3)}/>
                 </div>
                 <div className='m-32'>
                     <TagInfo tagValue={tagValue} />
