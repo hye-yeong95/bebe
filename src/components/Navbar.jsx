@@ -23,7 +23,7 @@ export default function Navbar() {
                 </Link>
                 
             </nav>
-            <div className='flex justify-center items-center gap-5 w-1/4 p-2' >
+            <div className='flex justify-end pr-10 items-center gap-5 w-1/4 p-2' >
                 <button className='p-2 text-4xl' >
                     <CiCircleMore />
                 </button>
