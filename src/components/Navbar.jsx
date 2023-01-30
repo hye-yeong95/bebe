@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <header className='flex justify-between p-2' >
+        <header className='flex justify-between' >
             <Link to='/' className='w-1/4  p-2'>
                 <img className='' src={mainLogo} alt="logo"/>
             </Link>
