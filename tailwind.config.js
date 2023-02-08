@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         brand: '#f95c58',
-      }
+      },
     },
   },
   plugins: [],

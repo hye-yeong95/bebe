@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div className='h-[300px] w-full flex  justify-between bg-white'>
+        <div className='h-80 w-full flex  justify-between bg-white'>
            <div>
             <div>
                 <h1>Bebe Family</h1>

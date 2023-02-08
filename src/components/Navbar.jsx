@@ -11,6 +11,11 @@ export default function Navbar() {
             <Link to='/' className='w-1/4  p-2'>
                 <img className='' src={mainLogo} alt="logo"/>
             </Link>
+
+
+
+
+            
             <nav className='flex justify-around items-center w-1/2 gap-5 p-2 mx-20' >
                 <Link to='/'>
                     <MenuButton text={"Home"} />
@@ -22,6 +27,11 @@ export default function Navbar() {
                     <MenuButton text={"Crew"} />
                 </Link>
             </nav>
+
+
+
+
+
             <div className='flex justify-center items-center gap-10 w-1/4 p-6' >
                 <button className='text-4xl' >
                     <CiCircleMore />
