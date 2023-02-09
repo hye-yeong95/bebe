@@ -8,7 +8,7 @@ import {
 import App from "./App";
 import Home from "./pages/Home";
 import NotFound from './pages/NotFound';
-import BebeDetail from './pages/BebeDetail';
+import BebeFamily from './pages/BebeFamily';
 import Crew from './pages/Crew';
 import Kit from './pages/Kit';
 
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   errorElement: <NotFound />,
   children: [
     { index: true, path: '/', element: <Home /> },
-    { path: '/detail', element: <BebeDetail /> },
+    { path: '/detail', element: <BebeFamily /> },
     { path: '/crew', element: <Crew /> },
     { path: '/bebekit', element: <Kit/>},
     ],

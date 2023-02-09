@@ -15,22 +15,13 @@ export default function Crew() {
                     </p>
                 </div>
             </div>
-            <div className='h-[450px] my-32 border-b border-gray-400'>
-                <h1 className='text-center text-6xl font-bold my-20'>Crew</h1>
-                <p className='flex justify-center text-center font-semibold text-4xl'>
-                    뭔말을 적을지 보류중<br/>
-                    뭔말을 적을지 보류중 뭔말을 적을지 보류중<br/>
+            <div className='my-32'>
+                <h1 className='text-center text-7xl font-bold my-20'>Crew</h1>
+                <p className='flex justify-center text-center font-semibold text-5xl'>
+                    베베 크루들이 일하는 이야기<br/>
                 </p>     
             </div>
             <CrewCard />
-
-
-
-
-
-
-
-
         </div>
     );
 }
