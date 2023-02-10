@@ -16,7 +16,7 @@ export default function TagInfo({tagValue}) {
         case 3 :
             return  <p className='flex justify-center text-center font-semibold text-4xl leading-normal'>
                     우리 아이를 위한 쇼핑몰 <br/>
-                    마니마니 사거라아아아아아아아아아아아아 하아 
+                    마니마니 사거라아아아아아아아아아아아아 하아... 
                     </p>
         default :
             return <p className='flex justify-center text-center font-semibold text-4xl leading-normal'>

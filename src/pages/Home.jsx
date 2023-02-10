@@ -12,15 +12,15 @@ export default function Home() {
     return (
         <div>
             <div className='relative' >
-                <img src={banner} alt='banner'/>
+                <img className='' src={banner} alt='banner'/>
                 <div className='absolute flex items-center bottom-5 left-10 gap-5' >
-                    <p className='text-7xl leading-snug font-bold text-left text-white'>
+                    <p className='shrink-0 text-7xl leading-snug font-bold text-left text-white'>
                         we support<br/>
                         every baby's first step
                     </p>
                     <div className='flex items-center m-5 pt-24'>
                         <img className='ml-10 mt-14'  src={vector} alt='vector'/>
-                        <Link className='ml-16 mt-14' to='/bebekit'>
+                        <Link className='ml-16 mt-14 shrink-0 ' to='/bebekit'>
                             <p className='px-14 py-8 rounded-full  font-bold text-3xl bg-white text-brand'># Bebe kit</p> 
                         </Link>
                     </div>
@@ -38,7 +38,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='my-32'>
-                <h1 className='text-center text-7xl font-bold my-20' >아직 미정</h1>
+                <h1 className='text-center text-7xl font-bold my-20' >베베 가치</h1>
                 <p className='flex justify-center text-center font-semibold text-4xl leading-normal'>
                     "베베"는 우리의 서비스를 누구나 잘 이해하고<br/>
                     가치를 공유하며, 나아가기를 희망합니다.<br/>

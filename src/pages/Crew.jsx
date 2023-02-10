@@ -8,7 +8,7 @@ export default function Crew() {
             <div className='relative' >
                 <img src={crewBanner} alt='banner'/>
                 <div className='absolute flex items-center bottom-12 left-10 gap-5' >
-                    <p className='text-7xl leading-snug font-bold text-left text-white'>
+                    <p className='shrink-0  text-7xl leading-snug font-bold text-left text-white'>
                         우리는 누구나 리더가 될 수 있고,<br/>
                         자유롭게 의견을 공유하며,<br/>
                         서로 좋은 영향을 주며 일합니다.

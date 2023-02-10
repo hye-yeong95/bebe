@@ -8,14 +8,9 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <header className='flex justify-between' >
-            <Link to='/' className='w-1/4  p-2'>
+            <Link to='/' className='flex items-center shrink-0 w-1/4 p-2 ml-10'>
                 <img className='' src={mainLogo} alt="logo"/>
             </Link>
-
-
-
-
-            
             <nav className='flex justify-around items-center w-1/2 gap-5 p-2 mx-20' >
                 <Link to='/'>
                     <MenuButton text={"Home"} />
@@ -27,16 +22,11 @@ export default function Navbar() {
                     <MenuButton text={"Crew"} />
                 </Link>
             </nav>
-
-
-
-
-
-            <div className='flex justify-center items-center gap-10 w-1/4 p-6' >
-                <button className='text-4xl' >
+            <div className='flex justify-center items-center gap-12 w-1/4 p-4' >
+                <button className='text-4xl shrink-0 ' >
                     <CiCircleMore />
                 </button>
-                <button className='text-3xl' >
+                <button className='text-3xl shrink-0 ' >
                     <BsGlobe />
                 </button>
             </div>
