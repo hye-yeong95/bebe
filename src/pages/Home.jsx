@@ -11,16 +11,16 @@ export default function Home() {
 
     return (
         <div>
-            <div className='relative' >
+            <div className='relative ' >
                 <img className='' src={banner} alt='banner'/>
-                <div className='absolute flex items-center bottom-5 left-10 gap-5' >
-                    <p className='shrink-0 text-7xl leading-snug font-bold text-left text-white'>
+                <div className='absolute flex justify-evenly w-full items-start bottom-10 ml-2'>                   
+                    <p className='text-7xl leading-snug font-bold text-left text-white'>
                         we support<br/>
                         every baby's first step
                     </p>
-                    <div className='flex items-center m-5 pt-24'>
-                        <img className='ml-10 mt-14'  src={vector} alt='vector'/>
-                        <Link className='ml-16 mt-14 shrink-0 ' to='/bebekit'>
+                    <div className=' flex items-center mt-12 ml-2'>
+                        <img className='mt-14 mr-6'  src={vector} alt='vector'/>
+                        <Link className='mt-14 mx-4 ' to='/bebekit'>
                             <p className='px-14 py-8 rounded-full  font-bold text-3xl bg-white text-brand'># Bebe kit</p> 
                         </Link>
                     </div>

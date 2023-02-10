@@ -42,7 +42,6 @@ export default function Footer() {
                     </div>
                 </div>
                 <p>https://diary.mybebe.net/</p>
-
             </div>
         </div>
     );
