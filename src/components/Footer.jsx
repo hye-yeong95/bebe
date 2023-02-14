@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <div className='w-full bg-black p-10'>
+        
+        <div className=' bg-black p-10 w-full '>
             <div className='flex justify-around  text-white'>
                 <div>
                     <h2 className='text-xl font-bold pb-4 pt-2'>Bebe Family</h2>

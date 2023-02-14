@@ -1,31 +1,40 @@
-import React from 'react';
-import banner from '../images/banner.png';
-import vector from '../images/vector.png';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import Diary from '../components/Diary';
+import Care from '../components/Care';
+import Mall from '../components/Mall';
 
 export default function BebeFamily() {
+
+    const [page, setPage] = useState(1);
+    console.log(page);
+
     return (
-        <div className='h-[900px]'>   
-            <nav className=''>
-                    <ul className='flex justify-around items-center h-14 text-xl text-gray-700 rela'>
-                        <li>
-                            <a href='/detail'>베베다이어리</a>
+        <div className='h-[900px] '>   
+            <nav className='mb-6 mx-20'>
+                    <ul className='flex justify-around items-center h-14 text-xl text-gray-700'>
+                        <li onClick={()=> setPage(1)}>
+                            Diary
                         </li>
-                        <li>
-                            <a href='/detail'>베베키트</a>
+                        <li onClick={()=> setPage(2)}>
+                            Care
                         </li>
-                        <li>
-                            <a href='/detail'>베베케어</a>
-                        </li>
-                        <li>
-                            <a href='/detail'>베베몰</a>
-                        </li>
-                        <li>
-                            <a href='/detail'>베베인공지능</a>
+                        <li onClick={()=> setPage(3)}>
+                            Mall
                         </li>
                     </ul>
             </nav>
-            
+
+
+            {
+                page ===1 ? 
+                <Diary /> : 
+                page === 2 ? 
+                <Care /> : 
+                page === 3 ?
+                <Mall />:
+                null          
+            }
+             
 
 
 

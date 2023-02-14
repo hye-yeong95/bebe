@@ -30,7 +30,7 @@ export default function Home() {
                 <h1 className='text-center text-7xl font-bold my-20'>Sevice</h1>
                 <div className='flex justify-center gap-10 ' >
                     <TagButton bgColor={ tagValue === 1 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe diary"} onClick={() => setTagValue(1)} />
-                    <TagButton bgColor={ tagValue === 2 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe kit"} onClick={() => setTagValue(2)}/>
+                    <TagButton bgColor={ tagValue === 2 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe Care"} onClick={() => setTagValue(2)}/>
                     <TagButton bgColor={ tagValue === 3 ? "bg-brand" : "bg-[#f95c58]/30" } text={"Bebe mall"} onClick={() => setTagValue(3)}/>
                 </div>
                 <div className='m-32'>

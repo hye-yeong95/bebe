@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CrewCard from '../components/CrewCard';
 import crewBanner from '../images/crew.png';
 
@@ -22,6 +23,9 @@ export default function Crew() {
                 </p>     
             </div>
             <CrewCard />
+            <Link to='/crew/apply'>
+                <p>베베 지원하기 </p>
+            </Link>
         </div>
     );
 }

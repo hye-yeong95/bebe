@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
     return (
         <header className='flex justify-between' >
-            <Link to='/' className='flex items-center shrink-0 w-1/4 p-2 ml-10'>
+            <Link to='/' className='flex items-center shrink-0 w-1/4 p-2 ml-3'>
                 <img className='' src={mainLogo} alt="logo"/>
             </Link>
             <nav className='flex justify-around items-center w-1/2 gap-5 p-2 mx-20' >

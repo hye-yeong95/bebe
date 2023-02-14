@@ -41,7 +41,7 @@ export default function CrewCard() {
         },
         {
             id: 7,
-            name: '권수진',
+            name: '박에덴',
             job: '인사관리',
             info: '"행복한 하루!"',
         },

@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 import BebeFamily from './pages/BebeFamily';
 import Crew from './pages/Crew';
 import Kit from './pages/Kit';
+import Apply from "./pages/Apply";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,7 @@ const router = createBrowserRouter([
     { index: true, path: '/', element: <Home /> },
     { path: '/detail', element: <BebeFamily /> },
     { path: '/crew', element: <Crew /> },
+    { path: '/crew/apply', element: <Apply/>},
     { path: '/bebekit', element: <Kit/>},
     ],
  }
