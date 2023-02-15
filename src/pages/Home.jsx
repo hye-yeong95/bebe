@@ -38,7 +38,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='my-32'>
-                <h1 className='text-center text-7xl font-bold my-20' >베베 가치</h1>
+                <h1 className='text-center text-6xl font-bold my-20' >베베 가치</h1>
                 <p className='flex justify-center text-center font-semibold text-4xl leading-normal'>
                     "베베"는 우리의 서비스를 누구나 잘 이해하고<br/>
                     가치를 공유하며, 나아가기를 희망합니다.<br/>
