@@ -4,6 +4,7 @@ import banner from '../images/banner.png';
 import vector from '../images/vector.png';
 import { Link } from 'react-router-dom';
 import TagInfo from '../components/TagInfo';
+import Icon from '../components/ui/Icon';
  
 export default function Home() {
 
@@ -46,6 +47,7 @@ export default function Home() {
                     더 쉽고 편한 시작이 되기를 바랍니다. 
                 </p>
             </div>
+            <Icon />
         </div>
     );
 }

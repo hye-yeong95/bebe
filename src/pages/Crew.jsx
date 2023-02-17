@@ -1,11 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import CrewCard from '../components/CrewCard';
 import crewBanner from '../images/crew.png';
+import { Link } from 'react-router-dom';
 
 export default function Crew() {
     return (
-        <div>
+        <div className=''>
             <div className='relative' >
                 <img src={crewBanner} alt='banner'/>
                 <div className='absolute flex items-center bottom-12 left-10 gap-5' >
@@ -24,7 +24,9 @@ export default function Crew() {
             </div>
             <CrewCard />
             <Link to='/crew/apply'>
-                <p>베베 지원하기 </p>
+                <div className='flex justify-center items-center'>
+                <button className='text-bold text-3xl px-8 py-5 text-brand hover:text-black pb-20'>베베 크루 지원하기 </button>
+            </div>
             </Link>
         </div>
     );

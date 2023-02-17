@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function CrewCard() {
 
@@ -47,7 +47,7 @@ export default function CrewCard() {
         },
     ]
 
-    const crewsList = crews.map((crews)=> 
+    const crewsList = crews.map((crews) => 
         <div className='my-5 w-80 h-96' key={crews.id}>
             <div className='w-full h-3/4 rounded-t-md bg-slate-200'>
                 <p className='flex justify-center items-end h-1/2'>이미지 준비중...</p>
@@ -61,12 +61,24 @@ export default function CrewCard() {
             </div>
         </div>
         );
+
+        const [more, setMore] = useState(false);
+
+        const onClickHandler = (() => {
+            setMore(!more)
+        });
+
+        console.log(more)
  
     return (
         <div className='my-48 mx-40 '>
             <div className='grid grid-cols-3 gap-y-20 gap-x-10'>       
-                {crewsList}
+                {crewsList.splice(0,6)}
             </div>
+            { more === true ? <div> {crewsList.splice(0,6)} </div> : null  }
+            <div className='flex justify-center items-center my-20'>
+                <button className=' bg-slate-100 rounded-full px-8 py-4 shrink-0 font-bold text-black-700 text-xl' onClick={onClickHandler}> 더 알아보기</button>
+            </div>   
         </div>
     );
 }
